@@ -15,7 +15,7 @@ This repo is a static site (HTML + images), so Vercel can deploy it without a bu
    - Output Directory: *(empty)*
 5. Click **Deploy**.
 
-The included `vercel.json` rewrites `/` to `autosea_esa_pwp.html`, so your homepage opens directly.
+The repo now includes `index.html`, which Vercel serves automatically as the homepage.
 
 ### Option 2: Vercel CLI
 1. Install CLI:
@@ -33,6 +33,7 @@ The included `vercel.json` rewrites `/` to `autosea_esa_pwp.html`, so your homep
 
 ### Notes
 - Keep these files in the repo root so relative image paths continue to work:
+  - `index.html`
   - `autosea_esa_pwp.html`
   - `Background.png`
   - `LM450_Details.jpg`
