@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AUTOSEA | Space-Enabled Maritime Autonomy</title>
+  <style>
+    :root {
+      --bg: #071a2f;
+      --surface: #ffffff;
+      --surface-alt: #f3f7fb;
+      --text: #122034;
+      --muted: #49627f;
+      --accent: #0066cc;
+      --accent-2: #00a3d7;
+      --line: #d7e2ef;
+      --shadow: 0 14px 35px rgba(7, 26, 47, 0.15);
+      --radius: 18px;
+      --maxw: 1140px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, "Segoe UI", Roboto, Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(180deg, #f6fbff 0%, #edf4fb 100%);
+      line-height: 1.6;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 70vh;
+      display: grid;
+      place-items: center;
+      padding: 5rem 1.25rem;
+      color: #fff;
+      text-align: center;
+      overflow: hidden;
+      background: #021224;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(120deg, rgba(2, 18, 36, 0.88), rgba(0, 56, 112, 0.72)), url("Background.png") center/cover no-repeat;
+      transform: scale(1.03);
+    }
+
+    .hero-content {
+      position: relative;
+      max-width: 860px;
+      z-index: 1;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 0.35rem 0.75rem;
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      border-radius: 99px;
+      font-size: 0.8rem;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      margin-bottom: 1.1rem;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 4.2vw, 3.9rem);
+      line-height: 1.06;
+      letter-spacing: -0.02em;
+    }
+
+    .hero p {
+      margin: 1.2rem auto 0;
+      max-width: 760px;
+      color: #def0ff;
+      font-size: clamp(1rem, 2vw, 1.25rem);
+    }
+
+    main {
+      max-width: var(--maxw);
+      margin: -4rem auto 0;
+      padding: 0 1rem 2.5rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    section {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      margin-bottom: 1.15rem;
+      overflow: hidden;
+    }
+
+    .section-body {
+      padding: 1.45rem;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 1.35rem;
+      color: #07294c;
+    }
+
+    .lead {
+      margin-top: 0.8rem;
+      color: var(--muted);
+    }
+
+    .media {
+      width: 100%;
+      display: block;
+      object-fit: cover;
+      max-height: 440px;
+    }
+
+    .caption {
+      margin-top: 0.7rem;
+      color: #5e7895;
+      font-size: 0.84rem;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    ul {
+      margin: 0.65rem 0 0;
+      padding-left: 1.2rem;
+    }
+
+    li { margin-bottom: 0.45rem; }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 0.85rem;
+      font-size: 0.95rem;
+    }
+
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 0.68rem 0.3rem;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      color: #0c355f;
+      font-size: 0.86rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .pill-row {
+      margin-top: 0.8rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+    }
+
+    .pill {
+      padding: 0.4rem 0.72rem;
+      border-radius: 999px;
+      background: var(--surface-alt);
+      border: 1px solid #c9daec;
+      color: #194979;
+      font-size: 0.86rem;
+      font-weight: 600;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    footer {
+      max-width: var(--maxw);
+      margin: 0 auto 2.5rem;
+      color: #395573;
+      font-size: 0.9rem;
+      padding: 0 1.2rem;
+    }
+
+    @media (max-width: 820px) {
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      main { margin-top: -2.7rem; }
+      .section-body { padding: 1.1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-content">
+      <div class="tag">ESA Business Applications | Demonstration Project</div>
+      <h1>AUTOSEA</h1>
+      <p>
+        Autonomous, space-enabled maritime operations for ports, coastal security and offshore operators. AUTOSEA combines USV autonomy, satellite navigation and satellite communications to deliver precise surveys, hull inspections and persistent monitoring without sending crews into high-risk repetitive missions.
+      </p>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <img class="media" src="LM450_Details.jpg" alt="LM450 autonomous vessel overview and system components" />
+      <div class="section-body">
+        <h2>Objectives of the Service</h2>
+        <p class="lead">
+          AUTOSEA addresses three operational gaps: costly crewed surveys, diver exposure during hull inspections, and infrequent subsea monitoring. The service deploys the LM450 autonomous surface vessel with modular payloads and an autonomous docking concept to execute repeatable missions and return geo-tagged evidence. Users receive high-resolution maps, anomaly alerts and mission reports through a remote workflow that scales from harbour operations to offshore corridors.
+        </p>
+        <p class="caption">Image credit: Lemvos GmbH (LM450 system view).</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-body">
+        <h2>Users and Their Needs</h2>
+        <div class="grid-2">
+          <div>
+            <p class="lead">AUTOSEA is used by organisations that require frequent, reliable maritime data with reduced staffing pressure and lower exposure to risk.</p>
+            <ul>
+              <li><strong>Ports and hydrography teams:</strong> dependable bathymetry updates and safer navigation channels.</li>
+              <li><strong>Coast guards and security agencies:</strong> repeatable hull checks and surveillance patrol data.</li>
+              <li><strong>Offshore operators:</strong> regular monitoring around subsea assets and cable routes.</li>
+              <li><strong>Research and environmental teams:</strong> long-duration missions for consistent data capture.</li>
+            </ul>
+          </div>
+          <div>
+            <table>
+              <tr><th>User Segment</th><th>Countries / Regions</th></tr>
+              <tr><td>Ports</td><td>Germany, Spain, Norway</td></tr>
+              <tr><td>Security organisations</td><td>Spain, EU waters</td></tr>
+              <tr><td>Offshore operators</td><td>EU and North Atlantic routes</td></tr>
+              <tr><td>Research institutions</td><td>Germany, Iberian Peninsula</td></tr>
+            </table>
+            <div class="pill-row">
+              <span class="pill">Crew risk reduction</span>
+              <span class="pill">Persistent monitoring</span>
+              <span class="pill">High revisit frequency</span>
+              <span class="pill">Operational cost control</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <img class="media" src="PXL_20260106_120113268.jpg" alt="AUTOSEA deployment and field operation image" />
+      <div class="section-body">
+        <h2>Service / System Concept</h2>
+        <p class="lead">
+          The service chain integrates vessel autonomy, edge processing, satellite connectivity and cloud reporting. Mission sensors collect bathymetry and inspection data, onboard software classifies features, and selected outputs stream through satellite links to remote operators. The architecture combines LM450, DockMaster docking and AutomatePro autonomy into a continuous loop: mission planning, autonomous execution, data transfer, and report delivery. This structure supports repeated operations over large maritime areas while keeping operational teams compact.
+        </p>
+        <p class="caption">Image credit: Lemvos GmbH (AUTOSEA field operations).</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-body">
+        <h2>Space Added Value</h2>
+        <p class="lead">
+          AUTOSEA combines space assets to make autonomous maritime operations practical at scale. GNSS/RTK positioning supports precise navigation and repeatable survey lines. Satellite communications provide beyond-line-of-sight command and near real-time delivery of mission outputs. This combination extends coverage, increases revisit rates and reduces dependency on crewed vessels for routine inspection tasks, creating a clear operational and cost advantage compared with conventional survey workflows.
+        </p>
+        <div class="pill-row">
+          <span class="pill">Satellite navigation</span>
+          <span class="pill">Satellite communications</span>
+          <span class="pill">Earth-observation compatible outputs</span>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-body">
+        <h2>Current Status</h2>
+        <p class="lead">
+          The project passed its mid-term review in Augsburg in February 2026. Saltwater demonstrations in Valencia validated autonomous vessel operation, docking workflow and mission data handling. The team has active letters of intent and pilot activities with user organisations, and is currently preparing additional demonstrations at major maritime events in 2026. The technical baseline and business case are in place, and ongoing work focuses on scaling pilots and operational readiness.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-body">
+        <h2>Contractors</h2>
+        <table>
+          <tr><th>Role</th><th>Company</th><th>Country</th><th>Website</th></tr>
+          <tr><td>Prime contractor</td><td>Lemvos GmbH</td><td>Germany</td><td><a href="https://lemvos.com" target="_blank" rel="noopener">lemvos.com</a></td></tr>
+          <tr><td>Programme support</td><td>European Space Agency</td><td>International</td><td><a href="https://www.esa.int" target="_blank" rel="noopener">esa.int</a></td></tr>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-body">
+        <h2>Related Links</h2>
+        <ul>
+          <li><a href="https://lemvos.com/lm450" target="_blank" rel="noopener">LM450 platform overview</a></li>
+          <li><a href="https://lemvos.com/automatepro" target="_blank" rel="noopener">AutomatePro autonomy stack</a></li>
+          <li><a href="https://lemvos.com/dockmaster" target="_blank" rel="noopener">DockMaster autonomous docking</a></li>
+          <li><a href="https://business.esa.int" target="_blank" rel="noopener">ESA Business Applications</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    AUTOSEA project web page • Updated March 2026 • Designed using ESA project page guidance.
+  </footer>
+</body>
+</html>
