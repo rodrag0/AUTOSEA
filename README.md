@@ -38,3 +38,8 @@ The repo now includes `index.html`, which Vercel serves automatically as the hom
   - `Background.png`
   - `LM450_Details.jpg`
   - `PXL_20260106_120113268.jpg`
+  - `lm450-101-hull-sw-surface_v17.glb`
+
+
+### 3D model section
+- The interactive vessel section loads `lm450-101-hull-sw-surface_v17.glb` with the `model-viewer` web component from unpkg.
