@@ -32,9 +32,11 @@ The repo now includes `index.html`, which Vercel serves automatically as the hom
    ```
 
 ### Notes
+- 3D asset in use: `Meshy_AI_Cyber_Submarine_0313122855_texture.glb` (replacing `lm450-101-hull-sw-surface_v17.glb`).
 - Keep these files in the repo root so relative image paths continue to work:
   - `index.html`
   - `autosea_esa_pwp.html`
   - `Background.png`
   - `LM450_Details.jpg`
   - `PXL_20260106_120113268.jpg`
+  - `Meshy_AI_Cyber_Submarine_0313122855_texture.glb`
